@@ -1,0 +1,22 @@
+/* Carrousel */
+
+.images img {
+    z-index: 1;
+  }
+  
+  .btnPrimary {
+    background-color: #8f8f8f;
+    font-size: 16px;
+    color: #f1f1f1;
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    border: #8f8f8f;
+
+    &:hover {
+        color: #98ff98;
+    }
+}
+
+.carousel-control {
+  width: 4%;
+ }

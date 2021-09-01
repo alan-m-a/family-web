@@ -1,0 +1,16 @@
+@mixin styleH($textAling, $marginTop) {
+  font-family: "Roboto", sans-serif;
+  text-align: $textAling;
+  margin-top: $marginTop;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@mixin style1($fontSize) {
+  font-size: $fontSize;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+

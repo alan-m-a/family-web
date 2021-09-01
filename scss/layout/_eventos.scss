@@ -1,0 +1,78 @@
+/* Eventos.html */
+
+.h1Actividades {
+  color: #1c1c1c;
+  font-family: "Anton", sans-serif;
+  font-style: oblique;
+}
+
+.btnPrimary {
+  color: #f1f1f1;
+}
+
+.contenedorEventos {
+  text-align: justify;
+  padding: 0;
+
+  .contenedorEventosP {
+    font-family: "Open Sans", sans-serif;
+    text-align: justify;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .contenedorEventosFamily {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    ul {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    h3 {
+      font-family: "Anton", sans-serif;
+      font-style: oblique;
+    }
+    list-style-position: inside;
+  }
+
+  .contenedorEventosZonal {
+
+    padding-top: 1.5rem;
+
+    h3 {
+      font-family: "Anton", sans-serif;
+      font-style: oblique;
+    }
+
+    ul {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    list-style-position: inside;
+  }
+
+  .contenedorEventosWpt {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+
+    h3 {
+      font-family: "Anton", sans-serif;
+      font-style: oblique;
+    }
+  }
+  .calendarContainer {
+    padding-top: 1.5rem;
+    display: block;
+    text-align: center;
+
+    img {
+      width: 75%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

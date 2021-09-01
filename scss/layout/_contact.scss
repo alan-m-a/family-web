@@ -1,0 +1,69 @@
+/* Contacto */
+/* Form */
+@import "../base/variables";
+
+form {
+  width: 450px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 7px;
+
+  h2 {
+    font-family: "Anton", sans-serif;
+    font-style: oblique;
+    font-weight: 400;
+    color: $letterColor;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.buttonEnviar {
+  background-color: $generalBorderColor;
+  color: #f1f1f1;
+  font-family: "Anton", sans-serif;
+
+  &:hover {
+    color: #98ff98;
+    cursor: pointer;
+  }
+}
+
+.formP {
+  margin: 2rem 6rem;
+  color: $letterColor;
+  text-align: center;
+  font-size: $fontSizeBase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 550;
+}
+
+.parrafoFinalContact {
+  display: block;
+
+  .pFinal {
+    margin: 1rem 6rem;
+    text-align: end;
+    font-family: "Anton", sans-serif;
+    font-style: oblique;
+    font-weight: 400;
+  }
+}

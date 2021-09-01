@@ -1,0 +1,42 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+p {
+  margin-bottom: 0;
+}
+
+/* Header / Barra de navegacion */
+header {
+  position: sticky;
+  z-index: 1000;
+  top: 0%;
+  background-color: $bgColor;
+
+  .nav-css {
+    background-color: $bgColor;
+  }
+}
+.nav-a {
+  @include style1(22px);
+  font-style: oblique;
+  text-decoration: none;
+  color: #F1F1F1;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 4px;
+    width: 0px;
+    transition: all 0.8s;
+  }
+}
+
+.logo {
+  height: ($heightBase / 7.5);
+  transition: all 2s;
+
+  &:hover {
+    filter: opacity(0.5);
+  }
+}

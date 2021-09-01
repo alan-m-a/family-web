@@ -1,0 +1,36 @@
+
+.contenedorNosotros{
+    width: 750px;
+    margin: auto;
+    font-size: 20px;
+
+    #nosotros{
+    text-align: justify;
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 550;
+
+    }
+
+    h1{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        color: #111;
+        text-align: justify;
+        font-family: "Anton", sans-serif;
+        font-style: oblique;
+        font-weight: 400;
+    }
+    p{
+        padding-bottom: 1rem;
+    }
+
+    .contenedorParrafoFinal{
+        display:flex;
+    }
+    .parrafoFinalNosotros{
+        margin: 0 0.3rem;
+        font-family: "Anton", sans-serif;
+        font-style: oblique;
+    }
+}

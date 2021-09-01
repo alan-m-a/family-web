@@ -1,0 +1,70 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+/* Footer*/
+
+/* Contacto */
+/* Container */
+#contactSite {
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #494747;
+  width: 100%;
+  height: 15vh;
+
+  .positionMapSite {
+    padding-top: 0.5rem;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  a {
+    font-size: 11px;
+    color: #f1f1f1;
+    text-decoration: none;
+
+    &:hover {
+      color: #98ff98;
+    }
+  }
+
+  .contenedorUbicacion {
+    display: flex;
+    align-items: center;
+
+    .positionMap {
+      margin: 0 1.5rem;
+    }
+  }
+}
+
+/*Estilos mapa de redes sociales*/
+.social img {
+  cursor: pointer;
+  margin-right: 0.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.subFooter {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #8f8f8f solid;
+  padding-top: 0.5rem;
+  background-color: #494747;
+  font-size: 10px;
+  text-transform: uppercase;
+
+  .subFooterFirst {
+    color: #f1f1f1;
+    display: flex;
+  }
+}

@@ -1,0 +1,631 @@
+@charset "UTF-8";
+p {
+  margin-bottom: 0;
+}
+
+/* Header / Barra de navegacion */
+header {
+  position: sticky;
+  z-index: 1000;
+  top: 0%;
+  background-color: #1c1c1c;
+}
+header .nav-css {
+  background-color: #1c1c1c;
+}
+
+.nav-a {
+  font-size: 22px;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: oblique;
+  text-decoration: none;
+  color: #F1F1F1;
+}
+.nav-a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 4px;
+  width: 0px;
+  transition: all 0.8s;
+}
+
+.logo {
+  height: 13.3333333333vh;
+  transition: all 2s;
+}
+.logo:hover {
+  filter: opacity(0.5);
+}
+
+/* Body */
+body {
+  background: #abbaab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #abbaab);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  /* Main */
+}
+body #containerMain {
+  padding-bottom: 5%;
+  min-height: calc(100vh - 201px);
+}
+
+/* Carrousel */
+.images img {
+  z-index: 1;
+}
+
+.btnPrimary {
+  background-color: #8f8f8f;
+  font-size: 16px;
+  color: #f1f1f1;
+  font-family: "Anton", sans-serif;
+  font-weight: 500;
+  border: #8f8f8f;
+}
+.btnPrimary:hover {
+  color: #98ff98;
+}
+
+.carousel-control {
+  width: 4%;
+}
+
+/* Boton modal */
+.modalContainer {
+  position: fixed;
+  top: 30%;
+}
+
+.parrafo {
+  color: #1c1c1c;
+}
+
+.btnPrimary {
+  background-color: #8f8f8f;
+  font-size: 16px;
+  color: #1f1f1f;
+  font-family: "Anton", sans-serif;
+  font-weight: 500;
+  border: #8f8f8f;
+}
+
+.btnPrimary:hover {
+  color: #98ff98;
+}
+
+/* Shop */
+.cardTitle {
+  color: #1c1c1c;
+  font-weight: 600;
+}
+
+.cardContenido {
+  color: #1c1c1c;
+}
+
+/* Contacto */
+/* Form */
+form {
+  width: 450px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 7px;
+}
+form h2 {
+  font-family: "Anton", sans-serif;
+  font-style: oblique;
+  font-weight: 400;
+  color: #1f1f1f;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.buttonEnviar {
+  background-color: #8f8f8f;
+  color: #f1f1f1;
+  font-family: "Anton", sans-serif;
+}
+.buttonEnviar:hover {
+  color: #98ff98;
+  cursor: pointer;
+}
+
+.formP {
+  margin: 2rem 6rem;
+  color: #1f1f1f;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 550;
+}
+
+.parrafoFinalContact {
+  display: block;
+}
+.parrafoFinalContact .pFinal {
+  margin: 1rem 6rem;
+  text-align: end;
+  font-family: "Anton", sans-serif;
+  font-style: oblique;
+  font-weight: 400;
+}
+
+/* Icono de wp */
+.containerButton {
+  position: fixed;
+  z-index: 1;
+  bottom: 2%;
+  right: 5%;
+}
+.containerButton img {
+  z-index: 1;
+  width: 6vh;
+}
+
+/* Encabezados generales */
+h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1f1f1f;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1f1f1f;
+  font-size: 32px;
+}
+
+/* Footer*/
+/* Contacto */
+/* Container */
+#contactSite {
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #494747;
+  width: 100%;
+  height: 15vh;
+}
+#contactSite .positionMapSite {
+  padding-top: 0.5rem;
+}
+#contactSite ul li {
+  list-style-type: none;
+}
+#contactSite a {
+  font-size: 11px;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+#contactSite a:hover {
+  color: #98ff98;
+}
+#contactSite .contenedorUbicacion {
+  display: flex;
+  align-items: center;
+}
+#contactSite .contenedorUbicacion .positionMap {
+  margin: 0 1.5rem;
+}
+
+/*Estilos mapa de redes sociales*/
+.social img {
+  cursor: pointer;
+  margin-right: 0.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.subFooter {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #8f8f8f solid;
+  padding-top: 0.5rem;
+  background-color: #494747;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.subFooter .subFooterFirst {
+  color: #f1f1f1;
+  display: flex;
+}
+
+/* Efecto links Generales*/
+a {
+  color: #f1f1f1;
+}
+a:hover {
+  color: #98ff98;
+}
+
+/* Formacion.html */
+/* Contenedor de las card*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+}
+
+/* Contenedor de la card interna*/
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Efecto de rotacion */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Posicion del frente y del back */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Estilo frontal por si no hay imagen*/
+.flip-card-front {
+  background-color: #bbb;
+  color: #1f1f1f;
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  color: #111;
+  transform: rotateY(180deg);
+}
+.flip-card-back .containerBack {
+  display: block;
+  text-align: center;
+}
+.flip-card-back h3,
+.flip-card-back h4 {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: oblique;
+}
+.flip-card-back p {
+  font-size: 18px;
+}
+
+.contenedorInscripcion {
+  padding-top: 2rem;
+  width: 750px;
+  margin: auto;
+}
+.contenedorInscripcion #inscripcion {
+  text-align: center;
+  color: #111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+/* Eventos.html */
+.h1Actividades {
+  color: #1c1c1c;
+  font-family: "Anton", sans-serif;
+  font-style: oblique;
+}
+
+.btnPrimary {
+  color: #f1f1f1;
+}
+
+.contenedorEventos {
+  text-align: justify;
+  padding: 0;
+}
+.contenedorEventos .contenedorEventosP {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+}
+.contenedorEventos .contenedorEventosP p {
+  font-size: 20px;
+}
+.contenedorEventos .contenedorEventosFamily {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  list-style-position: inside;
+}
+.contenedorEventos .contenedorEventosFamily ul {
+  font-family: "Open Sans", sans-serif;
+}
+.contenedorEventos .contenedorEventosFamily h3 {
+  font-family: "Anton", sans-serif;
+  font-style: oblique;
+}
+.contenedorEventos .contenedorEventosZonal {
+  padding-top: 1.5rem;
+  list-style-position: inside;
+}
+.contenedorEventos .contenedorEventosZonal h3 {
+  font-family: "Anton", sans-serif;
+  font-style: oblique;
+}
+.contenedorEventos .contenedorEventosZonal ul {
+  font-family: "Open Sans", sans-serif;
+}
+.contenedorEventos .contenedorEventosWpt {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+.contenedorEventos .contenedorEventosWpt h3 {
+  font-family: "Anton", sans-serif;
+  font-style: oblique;
+}
+.contenedorEventos .calendarContainer {
+  padding-top: 1.5rem;
+  display: block;
+  text-align: center;
+}
+.contenedorEventos .calendarContainer img {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Reservas.html */
+.contenedorTituloReserva {
+  justify-content: center;
+}
+.contenedorTituloReserva .contenedorH3 {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  color: #111;
+  font-family: "Anton", sans-serif;
+  font-style: oblique;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.campObligatorio {
+  color: #98ff98;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.fa {
+  height: 2em;
+  font-size: 3em;
+  overflow: hidden;
+  margin: 0.5em;
+  position: relative;
+  text-decoration: none;
+  width: 2em;
+}
+.fa:before, .fa:after {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  transition: 0.5s;
+  top: 50%;
+  width: 100%;
+}
+.fa:before {
+  color: #1c1c1c;
+  transform: translate3D(0, -50%, 0);
+  z-index: 2;
+}
+.fa:after {
+  padding-bottom: 25%;
+  padding-top: 300%;
+  top: 0;
+}
+.fa:hover:after {
+  transform: translate3D(0, -73%, 0);
+}
+.fa:hover:before {
+  transform: translate3D(0, -250%, 0);
+}
+
+.fa-twitter:after {
+  background-image: linear-gradient(#00acee 25%, url("../image/background.jpg") 75%);
+  content: "";
+  color: #00acee;
+}
+
+.fa-facebook:after {
+  background-image: linear-gradient(#3b5998 25%, url("../image/background.jpg") 75%);
+  content: "";
+  color: #3b5998;
+}
+
+.fa-instagram:after {
+  background-image: linear-gradient(#cc2366 25%, url("../image/background.jpg") 75%);
+  content: "";
+  color: #cc2366;
+}
+
+.fa-youtube:after {
+  background-image: linear-gradient(#b00 25%, url("../image/background.jpg") 75%);
+  content: "";
+  color: #b00;
+}
+
+.redesSociales {
+  padding-top: 2rem;
+}
+
+.backgroundJumbotron {
+  background-image: url("/image/jumbotronbg.png");
+  background-position: center;
+}
+
+.contenedorNosotros {
+  width: 750px;
+  margin: auto;
+  font-size: 20px;
+}
+.contenedorNosotros #nosotros {
+  text-align: justify;
+  color: #111;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 550;
+}
+.contenedorNosotros h1 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: #111;
+  text-align: justify;
+  font-family: "Anton", sans-serif;
+  font-style: oblique;
+  font-weight: 400;
+}
+.contenedorNosotros p {
+  padding-bottom: 1rem;
+}
+.contenedorNosotros .contenedorParrafoFinal {
+  display: flex;
+}
+.contenedorNosotros .parrafoFinalNosotros {
+  margin: 0 0.3rem;
+  font-family: "Anton", sans-serif;
+  font-style: oblique;
+}
+
+/* Reset selector universal css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Media query*/
+/* Mobile */
+@media only screen and (max-width: 576px) {
+  /* Ordinary CSS rules - CSS comun */
+  .logo {
+    height: 10vh;
+  }
+
+  /*Inicio - Nosotros*/
+  .contenedorNosotros {
+    width: 300px;
+    margin: auto;
+    font-size: 12px;
+  }
+  .contenedorNosotros #nosotros {
+    display: block;
+    text-align: justify;
+    color: #111;
+  }
+
+  .contenedorParrafoFinal {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /*Redes sociales*/
+  .redesSociales .displayNone {
+    display: none;
+  }
+
+  /*Formacion - Parrafos*/
+  .contenedorInscripcion {
+    padding-top: 2rem;
+    width: 100%;
+    margin: auto;
+  }
+
+  /*Eventos - Contenedor*/
+  .contenedorEventos {
+    width: 75%;
+    font-size: 15px;
+  }
+
+  /*Contacto*/
+  .parrafoFinalContact .pFinal {
+    margin: 2rem 2rem;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /* Formulario Contacto*/
+  form {
+    width: 100%;
+  }
+
+  /*Footer*/
+  #contactSite {
+    display: flex;
+    justify-content: center;
+  }
+
+  #contactSite .positionMap {
+    display: none;
+  }
+
+  #contactSite .positionMapSite {
+    display: none;
+  }
+
+  .social a {
+    display: none;
+  }
+
+  .card-personalizada {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

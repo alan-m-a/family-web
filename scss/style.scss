@@ -1,0 +1,107 @@
+@import "../scss/layout/header&nav";
+@import "../scss/base/body";
+@import "../scss/components/carrousel";
+@import "../scss/components/modal";
+@import "../scss/layout/shop";
+@import "../scss/layout/contact";
+@import "../scss/components/button-wp";
+@import "../scss/base/general-titles.scss";
+@import "../scss/layout/footer&sub";
+@import "../scss/base/general-a";
+@import "../scss/layout/formacion";
+@import "../scss/layout/eventos";
+@import "../scss/layout/reservas";
+@import "../scss/components/redes-sociales";
+@import "../scss/components/jumbotron";
+@import "../scss/components/nosotros";
+
+/* Reset selector universal css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Media query*/
+/* Mobile */
+
+@media only screen and (max-width: 576px) {
+  /* Ordinary CSS rules - CSS comun */
+  .logo {
+    height: ($heightBase / 10);
+  }
+
+  /*Inicio - Nosotros*/
+  .contenedorNosotros {
+    width: 300px;
+    margin: auto;
+    font-size: 12px;
+
+    #nosotros {
+      display: block;
+      text-align: justify;
+      color: #111;
+    }
+  }
+  .contenedorParrafoFinal {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /*Redes sociales*/
+  .redesSociales .displayNone {
+    display: none;
+  }
+
+  /*Formacion - Parrafos*/
+  .contenedorInscripcion {
+    padding-top: 2rem;
+    width: 100%;
+    margin: auto;
+  }
+
+  /*Eventos - Contenedor*/
+
+  .contenedorEventos {
+    width: 75%;
+    font-size: 15px;
+  }
+
+  /*Contacto*/
+  .parrafoFinalContact {
+    .pFinal {
+      margin: 2rem 2rem;
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+
+  /* Formulario Contacto*/
+  form {
+    width: 100%;
+  }
+
+  /*Footer*/
+
+  #contactSite {
+    display: flex;
+    justify-content: center;
+  }
+
+  #contactSite .positionMap {
+    display: none;
+  }
+
+  #contactSite .positionMapSite {
+    display: none;
+  }
+
+  .social a {
+    display: none;
+  }
+
+  .card-personalizada {
+    justify-content: center;
+  }
+}
